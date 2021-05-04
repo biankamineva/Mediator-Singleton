@@ -7,6 +7,7 @@ public class Bot {
 	String word  = "cat";
 	
 	private Bot() {
+		
 	}
 
 	public static Bot getInstance() {

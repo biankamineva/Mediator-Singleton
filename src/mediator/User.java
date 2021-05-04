@@ -6,6 +6,7 @@ public abstract class User {
 	protected String name;
 	
 	public User(MessageMediator mediator, String name) {
+		
 		this.mediator = mediator;
 		this.name = name;
 	}

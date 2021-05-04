@@ -11,15 +11,18 @@ public class Chat implements MessageMediator {
 	private Bot bot;
 	
 	public Chat() {
+		
 		this.users = new ArrayList<>();
 	}
 	
 	@Override
 	public void addUser(User user) {
+		
 		this.users.add(user);
 	}
 	
 	public void removeUser(User user) {
+		
 		for(User chatUser: this.users) {
 			if (chatUser != user) {
 				chatUser.receive(user.name + " is removed from chat!");
